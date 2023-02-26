@@ -19,9 +19,18 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <groupId>social.bigbone</groupId>
+      <artifactId>bigbone</artifactId>
+      <version>2.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>social.bigbone</groupId>
+      <artifactId>bigbone-rx</artifactId>
+      <version>2.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -68,4 +77,17 @@
       </plugins>
     </pluginManagement>
   </build>
+  <repositories>
+    <repository>
+      <id>maven-central-snapshots</id>
+      <name>Maven Central Snapshot Repository</name>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>
